@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  filter:blur(0px)
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-top: -100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: fadeIn 3s linear;
+    margin-bottom: 10px;
+  }
+}
+.background {
+  filter:blur(10px) ;
+  position: absolute;
+  background-image: url("https://i.scdn.co/image/ab67616d0000b2732b6d651ad0167b0cf8024ba5");
+  src: url("https://i.scdn.co/image/ab67616d0000b2732b6d651ad0167b0cf8024ba5");
+  z-index: -1;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: .1; transform: scale(0.5);}
+  100% {opacity: 1; transform: scale(1);}
+  
+}
